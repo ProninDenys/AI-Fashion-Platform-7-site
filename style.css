@@ -92,8 +92,7 @@ body {
 }
 
 .section2-description {
-    width: 570px;
-    height: 255px;
+    width: 100%;
     font-family: 'Lato', sans-serif;
     font-size: 19px;
     font-weight: 400;
@@ -104,7 +103,6 @@ body {
     padding: 20px;
     gap: 0px;
     opacity: 1;
-    margin-left: -18px;
 }
 
 .section3 {
@@ -143,8 +141,7 @@ body {
 }
 
 .section3-description {
-    width: 1170px;
-    height: 190px;
+    width: 100%;
     font-family: 'Lato', sans-serif;
     font-size: 19px;
     font-weight: 400;
@@ -156,7 +153,6 @@ body {
     gap: 0px;
     opacity: 1;
     margin-top: 20px;
-    margin-left: -20px;
 }
 
 .section4 {
@@ -195,8 +191,7 @@ body {
 }
 
 .section4-description {
-    width: 1170px;
-    height: 158px;
+    width: 100%;
     font-family: 'Lato', sans-serif;
     font-size: 19px;
     font-weight: 400;
@@ -208,7 +203,6 @@ body {
     gap: 0px;
     opacity: 1;
     margin-top: 20px;
-    margin-left: -20px;
 }
 
 .section5 {
@@ -247,8 +241,7 @@ body {
 }
 
 .section5-description {
-    width: 1170px;
-    height: 96px;
+    width: 100%;
     font-family: 'Lato', sans-serif;
     font-size: 19px;
     font-weight: 400;
@@ -260,7 +253,6 @@ body {
     gap: 0px;
     opacity: 1;
     margin-top: 20px;
-    margin-left: -20px;
 }
 
 .footer {
@@ -327,12 +319,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid; /* Добавлен бордер */
+    border: 1px solid; 
     transition: background-color 0.3s;
 }
 
 .footer-right .icon-container:hover {
-    background-color: #8a8080; /* Цвет фона при наведении */
+    background-color: #8a8080; 
 }
 
 .footer-right img {
@@ -344,14 +336,12 @@ body {
     
 }
 
-
 .footer-right .icon-container:hover img.instagram,
 .footer-right .icon-container:hover img.facebook,
 .footer-right .icon-container:hover img.linkedin {
-    filter: invert(100%); /* Иконка становится белой */
+    filter: invert(100%); 
     transition: filter 0.3s;
 }
-
 
 .footer-right img.twitter {
     filter: invert(71%) sepia(0%) saturate(0%) hue-rotate(186deg) brightness(97%) contrast(87%);
@@ -370,14 +360,13 @@ body {
     color: #000000;
 }
 
-
 @media (max-width: 768px) {
     body {
         width: 100%;
         height: auto;
         margin: 0;
         padding: 0;
-        overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+        overflow-x: hidden; 
         background: #FFFFFF;
     }
 
@@ -385,7 +374,7 @@ body {
         width: 100%;
         padding: 0 16px;
         box-sizing: border-box;
-        margin: 0 auto; /* Центрируем контейнер */
+        margin: 0 auto; 
     }
 
     .header {
@@ -395,7 +384,7 @@ body {
         box-sizing: border-box;
         display: flex;
         align-items: center;
-        justify-content: center; /* Центрируем содержимое хедера */
+        justify-content: center; 
     }
 
     .header-text {
@@ -403,8 +392,9 @@ body {
         height: 24px;
         font-size: 16px;
         line-height: 24px;
-        white-space: nowrap; /* Текст в одну строку */
-        margin-left: -510px;
+        white-space: nowrap; 
+        margin-left: -520px;
+        text-align: center;
     }
 
     .section1, .section2, .section3, .section4, .section5 {
@@ -416,24 +406,24 @@ body {
     }
 
     .section1 {
-        margin-top: 60px; /* Увеличиваем отступ сверху для секции 1 */
+        margin-top: 60px; 
     }
 
     .section2 {
-        margin-top: -250px; /* Уменьшаем расстояние между секцией 1 и секцией 2 */
+        margin-top: 20px;
     }
 
     .section3 {
-        margin-top: 40px; /* Уменьшаем расстояние между секцией 2 и секцией 3 */
+        margin-top: 40px; 
     }
 
     .section4 {
-        margin-top: -80px; /* Уменьшаем расстояние между секцией 3 и секцией 4 */
+        margin-top: 20px; 
     }
 
     .section5 {
-        margin-top: -100px; /* Уменьшаем расстояние между секцией 4 и секцией 5 */
-        margin-bottom: 20px; /* Уменьшаем нижний отступ для секции 5 */
+        margin-top: 20px; 
+        margin-bottom: 20px;
     }
 
     .section1-text {
@@ -475,7 +465,7 @@ body {
     .footer {
         width: 100%;
         height: auto;
-        padding: 30px 16px; /* Уменьшаем отступы */
+        padding: 30px 16px; 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -488,14 +478,14 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px; /* Уменьшаем расстояние между элементами */
+        gap: 10px; 
     }
 
     .footer-heading {
         font-family: 'Red Hat Display', sans-serif;
-        font-size: 28px; /* Уменьшаем размер шрифта */
+        font-size: 28px; 
         font-weight: 400;
-        line-height: 36px; /* Соответствующее изменение line-height */
+        line-height: 36px; 
         letter-spacing: 0.05em;
         text-align: center;
         color: #000000;
@@ -505,15 +495,15 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 5px; /* Уменьшаем расстояние между текстом Need a project? и телефоном/имейлом */
+        gap: 5px; 
         margin-top: -70px;
     }
 
     .footer-phone, .footer-email {
         font-family: 'Lato', sans-serif;
-        font-size: 14px; /* Уменьшаем размер шрифта */
+        font-size: 14px; 
         font-weight: 400;
-        line-height: 20px; /* Соответствующее изменение line-height */
+        line-height: 20px; 
         letter-spacing: 0.1em;
         text-align: center;
         color: #000000;
@@ -522,14 +512,14 @@ body {
     .footer-right {
         display: flex;
         justify-content: center;
-        gap: 10px; /* Уменьшаем расстояние между иконками */
-        margin-top: -20px; /* Уменьшаем верхний отступ */
+        gap: 10px; 
+        margin-top: -20px; 
         margin-bottom: 30px;
     }
 
     .icon-container {
-        width: 40px; /* Уменьшаем размер контейнера */
-        height: 40px; /* Уменьшаем размер контейнера */
+        width: 40px; 
+        height: 40px; 
         display: flex;
         justify-content: center;
         align-items: center;
@@ -538,8 +528,8 @@ body {
     }
 
     .footer-right img {
-        width: 20px; /* Уменьшаем размер иконок */
-        height: 20px; /* Уменьшаем размер иконок */
+        width: 20px; 
+        height: 20px; 
         cursor: pointer;
         transition: none;
         background-color: transparent;
@@ -559,16 +549,15 @@ body {
     .footer-bottom {
         width: 100%;
         font-family: 'Lato', sans-serif;
-        font-size: 10px; /* Уменьшаем размер шрифта */
+        font-size: 10px; 
         font-weight: 400;
-        line-height: 15px; /* Соответствующее изменение line-height */
+        line-height: 15px; 
         letter-spacing: 0.1em;
         text-align: center;
-        margin-top: 20px; /* Уменьшаем верхний отступ */
-        position: absolute; /* Исправляем позиционирование текста в футере */
+        margin-top: 20px;
+        position: absolute; 
         bottom: 10px;
         left: 0px;
-        
     }
 }
 @media (max-width: 320px) {
@@ -581,29 +570,29 @@ body {
 
     .header {
         width: 100%;
-        height: 60px;
-        padding: 18px 16px;
+        height: auto;
+        padding: 10px 0;
         box-sizing: border-box;
         display: flex;
         align-items: center;
-        justify-content: flex-start; /* Выравниваем содержимое по левому краю */
+        justify-content: center;
     }
 
     .header-text {
         width: auto;
-        height: 24px;
         font-size: 16px;
         line-height: 24px;
         white-space: nowrap;
-        margin-left: auto; /* Подвинуть текст CASE STUDY вправо */
+        text-align: center;
+        margin-left: 0;
+        padding: 0;
     }
 
     .section1 {
         width: 100%;
-        margin: 20px 0;
-        padding: 20px 16px;
+        margin: 10px 0; 
+        padding: 10px 16px;
         box-sizing: border-box;
-        position: relative;
     }
 
     .section1-text {
@@ -614,20 +603,20 @@ body {
         line-height: 50px;
         letter-spacing: 0.05em;
         text-align: left;
+        margin-bottom: 10px;
     }
 
     .section1-image {
         width: 100%;
         height: auto;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .section2 {
         width: 100%;
-        height: auto;
-        margin-top: 10px; /* Уменьшено расстояние между секциями */
-        background-color: #FFFFFF;
-        padding: 20px;
+        margin: 10px 0; 
+        padding: 10px 16px; 
+        box-sizing: border-box;
     }
 
     .section2-title {
@@ -639,25 +628,29 @@ body {
         letter-spacing: 0.1em;
         text-align: left;
         color: #000000;
+        margin-bottom: 10px;
     }
 
     .section2-description {
         width: 100%;
         font-family: 'Lato', sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
-        line-height: 32px;
+        line-height: 24px;
         letter-spacing: 0.05em;
         text-align: left;
         color: #565656;
+        word-wrap: break-word;
+        padding: 0 10px;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
     }
 
     .section3 {
         width: 100%;
-        height: auto;
-        margin-top: 50px;
-        background-color: #FFFFFF;
-        padding: 20px;
+        margin: 10px 0; 
+        padding: 10px 16px;
+        box-sizing: border-box;
     }
 
     .section3-title {
@@ -669,30 +662,196 @@ body {
         letter-spacing: 0.1em;
         text-align: left;
         color: #000000;
-        margin-bottom: 30px; /* Увеличено расстояние до картинки */
+        margin-bottom: 10px;
     }
 
     .section3-image {
         width: 100%;
         height: auto;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .section3-description {
         width: 100%;
         font-family: 'Lato', sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
-        line-height: 32px;
+        line-height: 24px;
         letter-spacing: 0.05em;
         text-align: left;
         color: #565656;
         margin-top: 20px;
     }
 
-    .section4,
-    .section5,
+    .section4 {
+        width: 100%;
+        margin: 10px 0; 
+        padding: 10px 16px; 
+        box-sizing: border-box;
+    }
+
+    .section4-title {
+        width: 100%;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 43.16px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    .section4-image {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .section4-description {
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #565656;
+        margin-top: 20px;
+    }
+
+    .section5 {
+        width: 100%;
+        margin: 10px 0; 
+        padding: 10px 16px; 
+        box-sizing: border-box;
+    }
+
+    .section5-title {
+        width: 100%;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 43.16px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    .section5-image {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .section5-description {
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #565656;
+        margin-top: 20px;
+    }
+
     .footer {
-        display: none;
+        width: 100%;
+        height: auto;
+        padding: 10px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F4F4F4;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    .footer-heading {
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 24px; 
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #000000;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin-top: -20px;
+    }
+
+    .footer-phone, .footer-email {
+        font-family: 'Lato', sans-serif;
+        font-size: 12px; 
+        font-weight: 400;
+        line-height: 16px; 
+        letter-spacing: 0.1em;
+        text-align: center;
+        color: #000000;
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: center;
+        gap: 10px; 
+        margin-top: -10px; 
+        margin-bottom: 10px; 
+    }
+
+    .icon-container {
+        width: 30px; 
+        height: 30px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+        transition: background-color 0.3s;
+    }
+
+    .footer-right img {
+        width: 16px; 
+        height: 16px; 
+        cursor: pointer;
+        transition: none;
+        background-color: transparent;
+    }
+
+    .footer-right .icon-container:hover img.instagram,
+    .footer-right .icon-container:hover img.facebook,
+    .footer-right .icon-container:hover img.linkedin {
+        filter: invert(100%);
+        transition: filter 0.3s;
+    }
+
+    .footer-right img.twitter {
+        filter: invert(71%) sepia(0%) saturate(0%) hue-rotate(186deg) brightness(97%) contrast(87%);
+    }
+
+    .footer-bottom {
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        font-size: 10px; 
+        font-weight: 400;
+        line-height: 12px; 
+        letter-spacing: 0.1em;
+        text-align: center;
+        margin-top: 10px; 
+        position: absolute;
+        bottom: 10px;
+        left: 0;
     }
 }
