@@ -1,5 +1,7 @@
 # AI Fashion Platform
 
+https://pronindenys.github.io/AI-Fashion-Platform-7-site/
+
 **AI Fashion Platform** is a modern, responsive web platform designed for showcasing a high-fashion accessory company. The site highlights the brand's sustainable approach and offers a unique user experience through interactive design and e-commerce functionality.
 
 ## Features
